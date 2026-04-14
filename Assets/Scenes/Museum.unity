@@ -3823,7 +3823,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4fe43791eefce4f69affc78ff6287fd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSource: {fileID: 704918557403771547}
+  audioSource: {fileID: 0}
 --- !u!1 &756192406
 GameObject:
   m_ObjectHideFlags: 0
@@ -23761,13 +23761,16 @@ PrefabInstance:
       addedObject: {fileID: 704918557403771545}
     - targetCorrespondingSourceObject: {fileID: 2849373656643448292, guid: ef1e1f9fd2f364f3ca9c74306d4ff53b, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 704918557403771547}
+      addedObject: {fileID: 704918557403771549}
     - targetCorrespondingSourceObject: {fileID: 2849373656643448292, guid: ef1e1f9fd2f364f3ca9c74306d4ff53b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 704918557403771546}
     - targetCorrespondingSourceObject: {fileID: 2849373656643448292, guid: ef1e1f9fd2f364f3ca9c74306d4ff53b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 704918557403771548}
+    - targetCorrespondingSourceObject: {fileID: 2849373656643448292, guid: ef1e1f9fd2f364f3ca9c74306d4ff53b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 704918557403771550}
     - targetCorrespondingSourceObject: {fileID: 341266065651546137, guid: ef1e1f9fd2f364f3ca9c74306d4ff53b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1388163104}
@@ -23829,7 +23832,19 @@ MonoBehaviour:
       m_Calls: []
   m_SelectEntered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 704918557403771549}
+        m_TargetAssemblyTypeName: TestAudio, Assembly-CSharp
+        m_MethodName: PlaySound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
       m_Calls: []
@@ -23974,10 +23989,39 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerHead: {fileID: 749882227}
-  audioSource: {fileID: 704918557403771547}
+  audioSource: {fileID: 0}
   grabInteractable: {fileID: 704918557403771543}
   triggerDistance: 0.2
---- !u!82 &704918557403771547
+--- !u!114 &704918557403771548
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 704918557403771541}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565e374e7a13c4b258a2c449801f6164, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  earAnchor: {fileID: 7424333}
+  grab: {fileID: 704918557403771543}
+  snapDistance: 0.25
+  snapSpeed: 10
+--- !u!114 &704918557403771549
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 704918557403771541}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fe43791eefce4f69affc78ff6287fd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSource: {fileID: 704918557403771550}
+--- !u!82 &704918557403771550
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -23998,10 +24042,10 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 0.3
-  MaxDistance: 2
+  MinDistance: 0.22124863
+  MaxDistance: 2.5954673
   Pan2D: 0
-  rolloffMode: 0
+  rolloffMode: 2
   BypassEffects: 0
   BypassListenerEffects: 0
   BypassReverbZones: 0
@@ -24009,23 +24053,50 @@ AudioSource:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
-      time: 0
+      time: 0.08524424
       value: 1
-      inSlope: 0
-      outSlope: 0
+      inSlope: -11.735689
+      outSlope: -11.735689
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
+      inWeight: 0
+      outWeight: 0
     - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
+      time: 0.12495625
+      value: 0.5048065
+      inSlope: -2.9339223
+      outSlope: -2.9339223
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.22389627
+      value: 0.12510681
+      inSlope: -0.7334806
+      outSlope: -0.7334806
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.5453725
+      value: 0
+      inSlope: -0.18337014
+      outSlope: -0.18337014
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.9057007
+      value: 0
+      inSlope: -0.08527823
+      outSlope: -0.08527823
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
@@ -24034,7 +24105,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -24074,22 +24145,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &704918557403771548
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 704918557403771541}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 565e374e7a13c4b258a2c449801f6164, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  earAnchor: {fileID: 7424333}
-  grab: {fileID: 704918557403771543}
-  snapDistance: 0.25
-  snapSpeed: 10
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

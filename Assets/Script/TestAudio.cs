@@ -6,10 +6,10 @@ public class TestAudio : MonoBehaviour
 
     void Start()
     {
-        Invoke("PlaySound", 2f);
+        //Invoke("PlaySound", 2f);
     }
 
-    void PlaySound()
+    public void PlaySound()
     {
         audioSource.Play();
         Debug.Log("Audio should be playing");
