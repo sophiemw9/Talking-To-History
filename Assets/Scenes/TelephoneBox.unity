@@ -177,7 +177,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -1950733119399844177, guid: c89d8894864a844409258d89a0e899c6, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.7845601
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -1950733119399844177, guid: c89d8894864a844409258d89a0e899c6, type: 3}
       propertyPath: m_LocalRotation.x
@@ -185,7 +185,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -1950733119399844177, guid: c89d8894864a844409258d89a0e899c6, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.6200528
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -1950733119399844177, guid: c89d8894864a844409258d89a0e899c6, type: 3}
       propertyPath: m_LocalRotation.z
@@ -193,7 +193,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -1950733119399844177, guid: c89d8894864a844409258d89a0e899c6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -76.64
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8140499575222096, guid: c89d8894864a844409258d89a0e899c6, type: 3}
       propertyPath: m_IsActive
@@ -238,6 +238,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -4783764414924819174, guid: c89d8894864a844409258d89a0e899c6, type: 3}
       insertIndex: -1
       addedObject: {fileID: 113832344}
+    - targetCorrespondingSourceObject: {fileID: -4783764414924819174, guid: c89d8894864a844409258d89a0e899c6, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 113832345}
   m_SourcePrefab: {fileID: 100100000, guid: c89d8894864a844409258d89a0e899c6, type: 3}
 --- !u!1 &113832338 stripped
 GameObject:
@@ -291,7 +294,19 @@ MonoBehaviour:
       m_Calls: []
   m_SelectEntered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 113832345}
+        m_TargetAssemblyTypeName: SceneChange, Assembly-CSharp
+        m_MethodName: changeScene
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
       m_Calls: []
@@ -426,6 +441,18 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.2942835, y: 1.2433228, z: 0.34758174}
   m_Center: {x: 1.4849312, y: 5.9077396, z: -1.3345919}
+--- !u!114 &113832345
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 113832338}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0b45215626dc4e7184867824fc96c11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &441087506
 PrefabInstance:
   m_ObjectHideFlags: 0

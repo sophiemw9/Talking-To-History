@@ -1,7 +1,6 @@
 using UnityEngine;
-
-
-public class GrabInteractble : MonoBehaviour
+using UnityEngine.SceneManagement;
+public class SceneChange : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -15,10 +14,9 @@ public class GrabInteractble : MonoBehaviour
         
     }
 
-    public void DoorGrab()
+    public void changeScene()
     {
-
-        Debug.Log("Grabbed");
-
+        SceneManager.LoadScene("Museum", LoadSceneMode.Single);
+        Debug.Log("selected");
     }
 }
