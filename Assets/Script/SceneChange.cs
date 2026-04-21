@@ -11,7 +11,12 @@ public class SceneChange : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
+    }
+
+    void selected()
+    {
+        Invoke(nameof(changeScene), 10.0f);
     }
 
     public void changeScene()
