@@ -14,9 +14,9 @@ public class SceneChange : MonoBehaviour
 
     }
 
-    void selected()
+    public void selected()
     {
-        Invoke(nameof(changeScene), 10.0f);
+        Invoke(nameof(changeScene), 2.0f);
     }
 
     public void changeScene()
